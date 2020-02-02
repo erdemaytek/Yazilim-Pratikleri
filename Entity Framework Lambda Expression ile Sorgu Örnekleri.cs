@@ -49,8 +49,6 @@ int adet = db.Products.Count();
 //product tablomdaki QuantityPerUnit sayısı(tabloda bu kolon eğer null ise toplama eklenmeyecektir)
 int adet2 = db.Products.Count(p => p.QuantityPerUnit != null);
  
- 
- 
 //product tablomdaki ürün fiyatlarımın toplamı
 decimal? toplamfiyat = db.Products.Sum(p => p.UnitPrice);
  
